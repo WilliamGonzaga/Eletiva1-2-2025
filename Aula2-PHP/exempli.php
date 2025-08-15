@@ -8,7 +8,8 @@
 <body>
     <?php
         $dia = date("d");
-    
+
+        echo "<p> $dia </p>";
     ?>
 
     <h1>Hoje é dia <?=$dia ?> de agosto de 2025</h1>
