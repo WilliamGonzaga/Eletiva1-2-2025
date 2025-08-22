@@ -23,12 +23,10 @@
 
 
     <div class="container">
-        <h1>Primeiro exemplo de formulario</h1>
-        <hr>
-
+       
         <div class="container">
             <h2>Soma de dois números</h2>
-            <form method="post" action="FormularioResp.php">
+            <form method="post">
             <div class="row inline-row mb-3"><div class="col-md-6">
                     <label for="numero1" class="form-label">numero1</label>
                     <input type="number" id="numero1" name="numero1" class="form-control" required="">
@@ -41,7 +39,24 @@
 
 
         </div>
+
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+            $numero1 = $_POST["numero1"];
+            $numero2 = $_POST["numero2"];
+            $soma = $numero1 + $numero2;
+
+            echo "Soma: $soma";
+
+
+        }
+        ?>
         
     </div>
+
+    
+
+
 </body>
 </html>
