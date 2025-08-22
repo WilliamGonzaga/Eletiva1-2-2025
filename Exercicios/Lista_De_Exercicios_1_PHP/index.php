@@ -9,8 +9,14 @@
 <body>
     <div class="container">
         <h1 class="text-center">Lista de Exercicio 1 PHP</h1>
+        <div class="container">
+            <a href="Exercicio-1/Exercicio1.php">Exercício - 1</a>
+        </div>
 
-        <a href="Exercicio-1/Exercicio1.php">Exercicio - 1</a>
+         <div class="container">
+            <a href="Exercicio-2/Exercicio2.php">Exercício - 2</a>
+        </div>
+        
 
     </div>
 

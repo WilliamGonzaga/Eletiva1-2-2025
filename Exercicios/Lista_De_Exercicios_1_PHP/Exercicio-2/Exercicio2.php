@@ -10,8 +10,7 @@
 
 <body>
     <div class="container">
-        <h3 class="text-center">1 - Criar um formulário que permita ao usuário inserir dois números. O script PHP deve
-            somar esses números e exibir o resultado.</h3>
+        <h3 class="text-center">2 - Criar um formulário que permita ao usuário inserir dois números. O script PHP deve subtrair o segundo número do primeiro e exibir o resultado.</h3>
 
         <hr>
 
@@ -29,12 +28,12 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
 
             <div class="mb-3 mt-3">
-                <label for="soma" class="form-label">Resultado: </label>
+                <label for="soma" class="form-label">Resultado da Subtração: </label>
                 <?php
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     $numero1 = $_POST['numero1'];
                     $numero2 = $_POST['numero2'];
-                    echo $numero1 + $numero2;
+                    echo $numero1 - $numero2;
                 }
                 ?>
 

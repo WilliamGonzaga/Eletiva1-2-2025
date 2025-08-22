@@ -24,7 +24,7 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
 
             <div class="mb-3 mt-3">
-                <label for="soma" class="form-label">Resultado: </label>
+                <label for="soma" class="form-label">Resultado da Soma: </label>
                        <?php 
                             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 $numero1 = $_POST['numero1'];
