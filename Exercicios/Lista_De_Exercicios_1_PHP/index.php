@@ -9,13 +9,30 @@
 <body>
     <div class="container">
         <h1 class="text-center">Lista de Exercicio 1 PHP</h1>
-        <div class="container">
-            <a href="Exercicio-1/Exercicio1.php">Exercício - 1</a>
-        </div>
 
-         <div class="container">
-            <a href="Exercicio-2/Exercicio2.php">Exercício - 2</a>
-        </div>
+        
+        <ol>
+            <li><a href="Exercicio-1/Exercicio1.php">Exercício - 1</a></li>
+            <li><a href="Exercicio-2/Exercicio2.php">Exercício - 2</a></li>
+            <li><a href="Exercicio-3/Exercicio3.php">Exercício - 3</a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
         
 
     </div>
