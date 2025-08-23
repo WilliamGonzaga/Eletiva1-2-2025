@@ -18,7 +18,7 @@
             <li><a href="Exercicio-4/Exercicio4.php">Exercício - 4</a></li>
             <li><a href="Exercicio-5/Exercicio5.php">Exercício - 5</a></li>
             <li><a href="Exercicio-6/Exercicio6.php">Exercício - 6</a></li>
-            <li></li>
+            <li><a href="Exercicio-7/Exercicio7.php">Exercício - 7</a></li>
             <li></li>
             <li></li>
             <li></li>
