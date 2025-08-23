@@ -11,21 +11,21 @@
 
 <body>
     <div class="container">
-        <h3 class="text-center">10 - Crie um formulário que permita ao usuário inserir a largura e a altura de um retângulo. O script PHP deve calcular o perímetro do retângulo e exibir o resultado.</h3>
+        <h3 class="text-center">10 - Crie um formulário que permita ao usuário inserir uma base e um expoente. O script PHP deve calcular a base elevada ao expoente e exibir o resultado</h3>
 
         <hr>
 
         <form method="post">
             <div class="mb-3">
             <div class="col-md-6">
-                    <label for="largura" class="form-label">Largura</label>
-                    <input type="number" id="largura" name="largura" class="form-control" required="">
+                    <label for="base" class="form-label">Base</label>
+                    <input type="number" id="base" name="base" class="form-control" required="">
                 </div>
 
 
                 <div class="col-md-6">
-                    <label for="altura" class="form-label">Altura</label>
-                    <input type="number" id="altura" name="altura" class="form-control" required="">
+                    <label for="expoente" class="form-label">Expoente</label>
+                    <input type="number" id="expoente" name="expoente" class="form-control" required="">
                 </div>
 
                 
@@ -34,18 +34,18 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
 
             <div class="mb-3 mt-3">
-                <label for="soma" class="form-label">Perímetro do Retângulo: </label>
+                <label for="soma" class="form-label">Resultado: </label>
                 <?php
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-                    $altura = $_POST['altura'];
-                    $largura = $_POST['largura'];
+                    $base = $_POST['base'];
+                    $expoente = $_POST['expoente'];
 
                     
                     
-                    $perimetro = ((2 * $altura) + (2 * $largura)) ;
+                    $elevada = ($base ** $expoente) ;
                     
-                    echo $perimetro;
+                    echo $elevada;
                 }
                 ?>
 
