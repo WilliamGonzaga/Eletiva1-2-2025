@@ -22,7 +22,7 @@
             <li><a href="Exercicio-8/Exercicio8.php">Exercício - 8</a></li>
             <li><a href="Exercicio-9/Exercicio9.php">Exercício - 9</a></li>
             <li><a href="Exercicio-10/Exercicio10.php">Exercício - 10</a></li>
-            <li></li>
+            <li><a href="Exercicio-11/Exercicio11.php">Exercício - 11</a></li>
             <li></li>
             <li></li>
             <li></li>

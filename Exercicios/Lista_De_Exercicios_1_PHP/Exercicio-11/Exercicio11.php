@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio - 9</title>
+    <title>Exercicio - 11</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <h3 class="text-center">9 - Crie um formulário que permita ao usuário inserir o raio de um círculo. O script PHP deve calcular a área do círculo (πr²) e exibir o resultado.</h3>
+        <h3 class="text-center">11 - Crie um formulário que permita ao usuário inserir o raio de um círculo. O script PHP deve calcular o perímetro do círculo (2πr) e exibir o resultado.</h3>
 
         <hr>
 
@@ -25,7 +25,7 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
 
             <div class="mb-3 mt-3">
-                <label for="soma" class="form-label">Área do círculo: </label>
+                <label for="soma" class="form-label">Perimetro do círculo: </label>
                 <?php
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -34,9 +34,9 @@
 
                     
                     
-                    $area = 3.14 * ($raio ** 2);
+                    $perimetro = (2 * 3.14 * $raio);
                     
-                    echo $area;
+                    echo $perimetro;
                 }
                 ?>
 
