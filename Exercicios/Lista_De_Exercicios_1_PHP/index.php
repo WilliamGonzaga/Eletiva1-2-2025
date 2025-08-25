@@ -24,14 +24,14 @@
             <li><a href="Exercicio-10/Exercicio10.php">Exercício - 10</a></li>
             <li><a href="Exercicio-11/Exercicio11.php">Exercício - 11</a></li>
             <li><a href="Exercicio-12/Exercicio12.php">Exercício - 12</a></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><a href="Exercicio-13/Exercicio13.php">Exercício - 13</a></li>
+            <li><a href="Exercicio-14/Exercicio14.php">Exercício - 14</a></li>
+            <li><a href="Exercicio-15/Exercicio15.php">Exercício - 15</a></li>
+            <li><a href="Exercicio-16/Exercicio16.php">Exercício - 16</a></li>
+            <li><a href="Exercicio-17/Exercicio17.php">Exercício - 17</a></li>
+            <li><a href="Exercicio-18/Exercicio18.php">Exercício - 18</a></li>
+            <li><a href="Exercicio-19/Exercicio19.php">Exercício - 19</a></li>
+            <li><a href="Exercicio-20/Exercicio20.php">Exercício - 20</a></li>
         </ol>
         
 

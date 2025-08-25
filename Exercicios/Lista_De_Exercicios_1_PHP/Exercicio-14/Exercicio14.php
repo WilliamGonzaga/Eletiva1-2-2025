@@ -5,47 +5,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio - 12</title>
+    <title>Exercicio - 14</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <h3 class="text-center">12 - Crie um formulário que permita ao usuário inserir uma base e um expoente. O script PHP deve calcular a base elevada ao expoente e exibir o resultado</h3>
+        <h3 class="text-center">14 -   Crie um formulário que permita ao usuário inserir um valor em quilômetros. O script PHP deve converter esse valor para milhas (1 quilômetro = 0.621371 milhas) e exibir o resultado. </h3>
 
         <hr>
 
         <form method="post">
             <div class="mb-3">
             <div class="col-md-6">
-                    <label for="base" class="form-label">Base</label>
-                    <input type="number" id="base" name="base" class="form-control" required="">
+                    <label for="quilômetros" class="form-label">Quilômetros</label>
+                    <input type="number" id="quilômetros" name="quilômetros" class="form-control" required="">
                 </div>
-
-
-                <div class="col-md-6">
-                    <label for="expoente" class="form-label">Expoente</label>
-                    <input type="number" id="expoente" name="expoente" class="form-control" required="">
-                </div>
-
                 
                 
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
 
             <div class="mb-3 mt-3">
-                <label for="soma" class="form-label">Resultado: </label>
+                <label for="soma" class="form-label">Resultado valor em Milhas: </label>
                 <?php
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-                    $base = $_POST['base'];
-                    $expoente = $_POST['expoente'];
+                    $quilômetros = $_POST['quilômetros'];
+                    
 
                     
+    
+                    $milhas = ($quilômetros * 0.621371) ;
                     
-                    $elevada = ($base ** $expoente) ;
-                    
-                    echo $elevada;
+                    echo "$milhas ";
                 }
                 ?>
 
