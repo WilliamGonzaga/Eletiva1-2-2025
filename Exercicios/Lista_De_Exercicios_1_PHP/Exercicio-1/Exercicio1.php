@@ -13,13 +13,17 @@
         <hr>
 
         <form method="post">
-            <div class="row inline-row mb-3"><div class="col-md-6">
+            <div class="row inline-row mb-3">
+                <div class="col-md-6">
                     <label for="numero" class="form-label">Primeiro Número</label>
                     <input type="number" id="numero1" name="numero1" class="form-control" required="">
-                    </div><div class="col-md-6">
+                </div>
+
+                <div class="col-md-6">
                     <label for="numero2" class="form-label">Segundo Número</label>
                     <input type="number" id="numero2" name="numero2" class="form-control" required="">
-                    </div>
+                </div>
+                
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
 
