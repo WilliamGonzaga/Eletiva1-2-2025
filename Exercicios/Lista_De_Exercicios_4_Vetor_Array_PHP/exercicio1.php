@@ -3,34 +3,45 @@
 ?>
     <h3>1 - Crie um formulário que leia dados de 5 contatos: nome e número de telefone. Leia os dados e crie um mapa ordenado onde as chaves são os nomes dos contatos e os valores são os números de telefone. Verifique se há duplicatas de nome ou número de telefone antes de adicionar um novo contato. Exiba a lista ordenada pelos nomes dos contatos.</h3>
     <hr>
+    <form method="post">
+        <div class="mb-3">
+            <?php for ($i = 1; $i <= 5; $i++): ?>
+                <label for="nome[]" class="form-label">Informe o <?= $i ?>° nome:</label>
+                <input type="text" id="nome[]" name="nome[]" class="form-control" required>
+                <label for="telefone[]" class="form-label">Informe o <?= $i ?>° telefone:</label>
+                <input type="text" id="telefone[]" name="telefone[]" class="form-control" required>
+            <?php endfor; ?>    
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>   
+    </form>
 
+    <?php
+        if($_SERVER['REQUEST_METHOD']== 'POST'){
+            $nomes = $_POST['nome'];
+            $telefones = $_POST['telefone'];
+            $contatos = [];
 
-    <div class="container py-3">
-        <h1>Exercício exemplo - vetores</h1>
-        <form method="post">
-            <div class="mb-3">
-                <?php for ($i = 1; $i <= 5; $i++): ?>
-                    <label for="valor[]" class="form-label"><?= $i ?>° - Informe o nome:</label>
-                    <input type="text" id="valor[]" name="valor[]" class="form-control">
+            for($i = 0; $i < count($nomes); $i++){
+                $nome = trim($nomes[$i]);
+                $telefone = trim($telefones[$i]);
 
-                    <label for="valor[]" class="form-label"><?= $i ?>° - Informe o número de telefone:</label>
-                    <input type="number" id="valor[]" name="valor[]" class="form-control">
-
-                <?php endfor; ?>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-
-        <?php
-            if($_SERVER['REQUEST_METHOD']== 'POST'){
-                $vetor = $_POST['valor'];
-                sort($vetor);
-                foreach($vetor as $v){
-                    echo "<p>$v <?p>";
+                if(array_key_exists($nome, $contatos)){
+                    echo "<p>O nome '$nome' já existe. Contato não adicionado.</p>";
+                } elseif(in_array($telefone, $contatos)){
+                    echo "<p>O telefone '$telefone' já existe. Contato não adicionado.</p>";
+                } else {
+                    $contatos[$nome] = $telefone;
                 }
             }
 
-        ?>
+            ksort($contatos);
+
+            echo "<h4>Lista de Contatos:</h4>";
+            foreach($contatos as $nome => $telefone){
+                echo "<p>$nome: $telefone</p>";
+            }
+        }
+    ?>
 
 
 <?php
