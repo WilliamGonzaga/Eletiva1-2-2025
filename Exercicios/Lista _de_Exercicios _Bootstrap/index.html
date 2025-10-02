@@ -83,63 +83,279 @@
 
             <form action="" class="row">
 
-                <div class="mb-4 col-lg-1 col-md-6 col-sm-12">
-                    <label for="Zip" class="form-label"><b>Código</b></label>
-                    <input type="text" class="form-control" name="Código" id="Código" placeholder="32" required>
-                </div> 
+                <div class="col-lg-1 col-md-3 col-sm-6">
+                    <label for="codigo" class="form-label"><b>Código</b></label>
+                    <input type="text" class="form-control" id="codigo" placeholder="32" required>
+                </div>
 
-                <div class="mb-4 col-lg-4 col-md-6 col-sm-12">
-                    <label for="NomeCompletoDoCliente" class="form-label"><b>Nome Completo Do Cliente</b></label>
-                    <input type="text" class="form-control" name="NomeCompletoDoCliente" id="NomeCompletoDoCliente" placeholder="NomeCompletoDoCliente" required>
-                </div> 
+                <div class="col-lg-4 col-md-9 col-sm-6">
+                    <label for="nomeCompleto" class="form-label"><b>Nome</b></label>
+                    <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome Completo do Cliente" required>
+                </div>
 
-                <div class="mb-4 col-lg-4 col-md-6 col-sm-12">
-                    <label for="E-mail" class="form-label"><b>E-mail</b></label>
-                    <input type="email" class="form-control" name="E-mail" id="E-mail" placeholder="cliente@dominio.com" required>
-                </div> 
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <label for="email2" class="form-label"><b>E-mail</b></label>
+                    <input type="email" class="form-control" id="email2" placeholder="cliente@dominio.com" required>
+                </div>
 
-            
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <label for="cpf2" class="form-label"><b>CPF</b></label>
+                    <input type="text" class="form-control" id="cpf2" placeholder="Só números" inputmode="numeric" maxlength="11" required>
+                </div>
 
-                <div class="mb-4 col-lg-3 col-md-6 col-sm-12">
-                    <label for="CPF" class="form-label"><b>CPF</b></label>
-                    <input type="number" class="form-control" name="CPF" id="CPF" placeholder="Só numero" required>
-                </div> 
+                <!-- Linha 2 -->
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <label for="celular2" class="form-label"><b>N° Celular</b></label>
+                    <input type="tel" class="form-control" id="celular2" placeholder="N° do celular" maxlength="15" required>
+                </div>
 
-                <div class="mb-4 col-lg-2 col-md-6 col-sm-12">
-                    <label for="N°Celular" class="form-label"><b>N° Celular</b></label>
-                    <input type="number" class="form-control" name="N°Celular" id="N°Celular" placeholder="N° Celular" required>
-                </div> 
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <label for="fixo2" class="form-label"><b>N° Telefone fixo</b></label>
+                    <input type="tel" class="form-control" id="fixo2" placeholder="N° telefone">
+                </div>
 
-                <div class="mb-4 col-lg-2 col-md-6 col-sm-12">
-                    <label for="N°TelefoneFixo" class="form-label"><b>N° Telefone Fixo</b></label>
-                    <input type="tel" class="form-control" name="N°TelefoneFixo" id="N°TelefoneFixo" placeholder="N° Telefone" required>
-                </div> 
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <label for="cep2" class="form-label"><b>CEP</b></label>
+                    <input type="text" class="form-control" id="cep2" placeholder="ex:88308070" inputmode="numeric" maxlength="8" required>
+                </div>
 
-                <div class="mb-4 col-lg-2 col-md-6 col-sm-12">
-                    <label for="CEP" class="form-label"><b>CEP</b></label>
-                    <input type="tel" class="form-control" name="CEP" id="CEP" placeholder="ex:88308070" required>
-                </div> 
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <label for="logradouro2" class="form-label"><b>Logradouro</b></label>
+                    <input type="text" class="form-control" id="logradouro2" placeholder="ex: Rua 1400" required>
+                </div>
 
-                <div class="mb-4 col-lg-2 col-md-6 col-sm-12">
-                    <label for="Logradouro" class="form-label"><b>Logradouro</b></label>
-                    <input type="text" class="form-control" name="Logradouro" id="Logradouro" placeholder="ex:Rua 1400" required>
-                </div> 
+                <div class="col-lg-1 col-md-3 col-sm-4">
+                    <label for="numero2" class="form-label"><b>N°</b></label>
+                    <input type="text" class="form-control" id="numero2" placeholder="N°" inputmode="numeric" maxlength="6" required>
+                </div>
 
-                <div class="mb-4 col-lg-1 col-md-6 col-sm-12">
-                    <label for="N°" class="form-label"><b>N°</b></label>
-                    <input type="number" class="form-control" name="N°" id="N°" placeholder="N°" required>
-                </div> 
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <label for="bairro2" class="form-label"><b>Bairro</b></label>
+                    <input type="text" class="form-control" id="bairro2" placeholder="Bairro" required>
+                </div>
 
-                <div class="mb-4 col-lg-3 col-md-6 col-sm-12">
-                    <label for="Bairro" class="form-label"><b>Bairro</b></label>
-                    <input type="text" class="form-control" name="Bairro" id="Bairro" placeholder="Bairro" required>
-                </div> 
+                <!-- Linha 3 (o que faltava) -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <label for="cidade2" class="form-label"><b>Cidade</b></label>
+                    <input type="text" class="form-control" id="cidade2" placeholder="Cidade" required>
+                </div>
+
+                <div class="col-lg-1 col-md-3 col-sm-6">
+                    <label for="uf2" class="form-label"><b>UF</b></label>
+                    <select id="uf2" class="form-select" required>
+                    <option value="" selected>UF</option>
+                    <option>AC</option><option>AL</option><option>AP</option><option>AM</option>
+                    <option>BA</option><option>CE</option><option>DF</option><option>ES</option>
+                    <option>GO</option><option>MA</option><option>MT</option><option>MS</option>
+                    <option>MG</option><option>PA</option><option>PB</option><option>PR</option>
+                    <option>PE</option><option>PI</option><option>RJ</option><option>RN</option>
+                    <option>RS</option><option>RO</option><option>RR</option><option>SC</option>
+                    <option>SP</option><option>SE</option><option>TO</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <label for="status2" class="form-label"><b>Status</b></label>
+                    <select id="status2" class="form-select" required>
+                    <option value="" selected>Selecione</option>
+                    <option>Ativo</option>
+                    <option>Inativo</option>
+                    <option>Pendente</option>
+                    </select>
+                </div>
+
+                <!-- Botões -->
+                <div class="col-12 d-flex justify-content-end gap-2">
+                    <button type="reset" class="btn btn-danger">Resetar</button>
+                    <button type="submit" class="btn btn-success">Próximo</button>
+                </div>
 
             </form>
-
         </div>
 
+        <hr>
 
+        <div class="container" style="border: 1px solid #000; padding: 15px;">
+                <h3>Formulário 3</h3>
+                
+                <form class="row g-3">
+                    <h1 class="text-center">Sample Form</h1>
+                    
+                    <div class="col-md-6">
+                    <label for="partnerName" class="form-label">Partner Name</label>
+                    <input type="text" id="partnerName" class="form-control" placeholder="">
+                    </div>
+                    <div class="col-md-6">
+                    <label for="partnerEmail" class="form-label">Partner Email ID</label>
+                    <input type="email" id="partnerEmail" class="form-control" placeholder="">
+                    </div>
+
+                    <div class="col-md-6">
+                    <label for="partnerLegalName" class="form-label">Partner Legal Name</label>
+                    <input type="text" id="partnerLegalName" class="form-control" placeholder="">
+                    </div>
+                    <div class="col-md-6">
+                    <label for="partnerMobile" class="form-label">Partner Mobile</label>
+                    <input type="tel" id="partnerMobile" class="form-control" placeholder="">
+                    </div>
+
+                    <div class="col-12">
+                    <label for="partnerAddress" class="form-label">Partner Address</label>
+                    <textarea id="partnerAddress" class="form-control" rows="2"></textarea>
+                    </div>
+
+                    <div class="col-md-6">
+                    <label for="contractStart" class="form-label">Contract Start Date</label>
+                    <input type="date" id="contractStart" class="form-control" placeholder="Date Start">
+                    </div>
+                    <div class="col-md-6">
+                    <label for="contractEnd" class="form-label">Contract Expiry Date</label>
+                    <input type="date" id="contractEnd" class="form-control" placeholder="Date End">
+                    </div>
+
+                    <div class="col-md-6">
+                    <label for="minLoan" class="form-label">Minimum Loan Amount</label>
+                    <input type="number" id="minLoan" class="form-control" placeholder="">
+                    </div>
+                    <div class="col-md-6">
+                    <label for="maxLoan" class="form-label">Maximum Loan Amount</label>
+                    <input type="number" id="maxLoan" class="form-control" placeholder="">
+                    </div>
+
+                    <div class="col-md-6">
+                    <label for="interestRate" class="form-label">Interest Rate</label>
+                    <input type="number" step="0.01" id="interestRate" class="form-control" placeholder="">
+                    </div>
+                    <div class="col-md-6">
+                    <label for="depositAmount" class="form-label">Deposit Amount</label>
+                    <input type="number" id="depositAmount" class="form-control" placeholder="">
+                    </div>
+
+                    <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary px-4">Save</button>
+                    </div>
+                </form>
+        </div>
+
+        <hr>
+
+        <div class="container" style="border: 1px solid #000; padding: 15px;">
+                <h3>Formulário 4</h3>
+                
+                <form class="row g-3">
+                    <h1>Novo Usuario</h1>
+                    <div class="col-12">
+                    <label for="nomeUsuario" class="form-label">Nome:</label>
+                    <input type="text" id="nomeUsuario" class="form-control" placeholder="Informe o nome...">
+                    </div>
+
+                    <div class="col-md-4">
+                    <label for="cpfUsuario" class="form-label">CPF:</label>
+                    <input type="text" id="cpfUsuario" class="form-control" placeholder="Informe o cpf...">
+                    </div>
+                    <div class="col-md-6">
+                    <label for="enderecoUsuario" class="form-label">Endereço:</label>
+                    <input type="text" id="enderecoUsuario" class="form-control" placeholder="Informe o endereço...">
+                    </div>
+                    <div class="col-md-2">
+                    <label for="nivelUsuario" class="form-label">Nível:</label>
+                    <select id="nivelUsuario" class="form-select">
+                        <option selected>--</option>
+                        <option>Vendedor</option>
+                        <option>Gestor</option>
+                        <option>Administrador</option>
+                    </select>
+                    </div>
+
+                    <div class="col-md-4">
+                    <label for="emailUsuario" class="form-label">Email:</label>
+                    <input type="email" id="emailUsuario" class="form-control" placeholder="Informe o email...">
+                    </div>
+                    <div class="col-md-4">
+                    <label for="senhaUsuario" class="form-label">Senha:</label>
+                    <input type="password" id="senhaUsuario" class="form-control" placeholder="Informe a senha...">
+                    </div>
+                    <div class="col-md-2">
+                    <label for="statusUsuario" class="form-label">Status:</label>
+                    <select id="statusUsuario" class="form-select">
+                        <option selected>--</option>
+                        <option>Ativo</option>
+                        <option>Inativo</option>
+                    </select>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-end gap-2">
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                    <button type="button" class="btn btn-outline-secondary">Cancelar</button>
+                    </div>
+                </form>
+        </div>
+
+        <hr>
+        
+        <div class="container" style="border: 1px solid #000; padding: 15px;">
+            <h3>Formulário 5</h3>
+
+            <div class="container d-flex justify-content-center align-items-center" style="min-height: 60vh;">
+            <div class="bg-light rounded shadow p-4" style="max-width: 500px; width: 100%;">
+                <h5>Billing address</h5>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" id="firstName" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" id="lastName" class="form-control">
+                    </div>
+                    <div class="col-12">
+                        <label for="username5" class="form-label">Username</label>
+                        <div class="input-group">
+                            <span class="input-group-text">@</span>
+                            <input type="text" id="username5" class="form-control" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="email5" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                        <input type="email" id="email5" class="form-control" placeholder="you@example.com">
+                    </div>
+                    <div class="col-12">
+                        <label for="address1" class="form-label">Address</label>
+                        <input type="text" id="address1" class="form-control" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                        <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                        <input type="text" id="address2" class="form-control" placeholder="Apartment or suite">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="country5" class="form-label">Country</label>
+                        <select id="country5" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>Brazil</option>
+                            <option>United States</option>
+                            <option>Argentina</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="state5" class="form-label">State</label>
+                        <select id="state5" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>SP</option><option>RJ</option><option>MG</option><option>RS</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="zip5" class="form-label">Zip</label>
+                        <input type="text" id="zip5" class="form-control">
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary px-4">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+
+    
 
         
 
